@@ -1,0 +1,79 @@
+<h1>JS Meetup Expense Report</h1>
+<div class="header">
+    <table>
+        <tr>
+            <td>
+                <label for="employeeId">
+                    Organiser ID
+                </label>
+            </td>
+            <td>
+                <input type="text" id="employeeId" value="<%= model.employeeId %>">
+            </td>
+            <td>
+                <label for="department">
+                    Meetup Group
+                </label>
+            </td>
+            <td>
+                <input type="text" id="department" value="<%= model.department %>">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="firstName">
+                    First Name
+                </label>
+            </td>
+            <td>
+                <input type="text" id="firstName" value="<%= model.firstName %>">
+            </td>
+            <td>
+                <label for="lastName">
+                    Last Name
+                </label>
+            </td>
+            <td>
+                <input type="text" id="lastName" value="<%= model.lastName %>">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Created
+            </td>
+            <td>
+                <span id="createdDate"><%= model.createdDate %></span>
+            </td>
+            <td>
+                Last Modified
+            </td>
+            <td>
+                <span id="lastModified"><%= model.lastModified %></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Start Date
+            </td>
+            <td>
+                <input type="date" id="startDate" value="<%= model.startDate %>">
+            </td>
+            <td>
+                End Date
+            </td>
+            <td>
+                <input type="date" id="endDate" value="<%= model.endDate %>">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Description
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <textarea id="description" cols="80" rows="5"></textarea>
+            </td>
+        </tr>
+    </table>
+</div>

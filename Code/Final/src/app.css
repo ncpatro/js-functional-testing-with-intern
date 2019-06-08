@@ -1,0 +1,27 @@
+table.body {
+    width: 100%;
+}
+
+th.row-num {
+    width: 5%;
+}
+
+th.date {
+    width: 10%;
+}
+
+th.amount {
+    width: 15%;
+}
+
+th.actions {
+    width: 15%;
+}
+
+tr input {
+    width: 90%;
+}
+
+tr .actions {
+    text-align: center;
+}

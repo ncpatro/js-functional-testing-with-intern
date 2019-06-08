@@ -1,0 +1,25 @@
+{
+    "node": {
+        "plugins": "node_modules/babel-register/lib/node.js"
+    },
+    "browser": {
+        "loader": {
+            "script": "systemjs",
+            "options": {
+                "map": {
+                    "plugin-babel": "node_modules/systemjs-plugin-babel/plugin-babel.js",
+                    "systemjs-babel-build": "node_modules/systemjs-plugin-babel/systemjs-babel-browser.js"
+                },
+                "transpiler": "plugin-babel"
+            }
+        }
+    },
+    "instrumenterOptions": {
+        "esModules": true
+    },
+    "suites": "tests/unit/**/*.js",
+    "functionalSuites": "tests/functional/**/*.js",
+    "environments": ["node", "chrome"],
+    "coverage": "./src/**/*.js",
+    "leaveRemoteOpen": true
+}
